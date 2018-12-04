@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.lijingya.androidipc.MainActivity">
+  <Button
+    android:id="@+id/btn_second_act"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SecondActivity"
+    />
+  <Button
+    android:id="@+id/btn_three_act"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ThirdActivity"
+    app:layout_constraintTop_toBottomOf="@id/btn_second_act"
+    />
+  <Button
+    android:id="@+id/btn_aidl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="AIDL"
+    app:layout_constraintTop_toBottomOf="@id/btn_three_act"
+    />
+  <Button
+    android:id="@+id/btn_messenger"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Messenger"
+    app:layout_constraintTop_toBottomOf="@id/btn_aidl"
+    />
+</android.support.constraint.ConstraintLayout>
